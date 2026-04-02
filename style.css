@@ -97,7 +97,7 @@ textarea {
 }
 
 .brand-logline {
-  font-size: 13px;
+  font-size: 14px;
   color: var(--text-subtle);
   line-height: 1.55;
 }
@@ -250,7 +250,7 @@ textarea {
 }
 
 .ep-subtitle {
-  font-size: 12px;
+  font-size: 13px;
   color: var(--text-subtle);
   line-height: 1.45;
 }
@@ -294,7 +294,7 @@ textarea {
 }
 
 .script-title {
-  font-size: 30px;
+  font-size: 28px;
   font-weight: 820;
   line-height: 1.18;
   letter-spacing: -0.04em;
@@ -303,7 +303,7 @@ textarea {
 
 .script-summary {
   max-width: 720px;
-  font-size: 17px;
+  font-size: 16px;
   color: var(--text-subtle);
   line-height: 1.72;
 }
@@ -375,14 +375,14 @@ textarea {
 }
 
 .section-title {
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 780;
   letter-spacing: -0.01em;
   color: var(--text-main);
 }
 
 .section-note {
-  font-size: 17px;
+  font-size: 16px;
   color: var(--text-main);
   line-height: 1.72;
 }
@@ -414,7 +414,7 @@ textarea {
 }
 
 .overview-value {
-  font-size: 17px;
+  font-size: 16px;
   line-height: 1.72;
 }
 
@@ -464,7 +464,7 @@ textarea {
 }
 
 .question-text {
-  font-size: 17px;
+  font-size: 16px;
   line-height: 1.72;
 }
 
@@ -486,7 +486,7 @@ textarea {
 
 .meta-tag-value {
   display: block;
-  font-size: 17px;
+  font-size: 16px;
   line-height: 1.72;
 }
 
@@ -528,13 +528,13 @@ textarea {
 }
 
 .scene-slug {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 760;
   color: var(--text-subtle);
 }
 
 .scene-title {
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 760;
   letter-spacing: -0.02em;
   line-height: 1.4;
@@ -579,7 +579,7 @@ textarea {
 }
 
 .scene-row-text {
-  font-size: 17px;
+  font-size: 16px;
   line-height: 1.72;
 }
 
@@ -609,7 +609,7 @@ textarea {
   border-radius: 0;
   background: transparent;
   padding: 0;
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 500;
   line-height: 1.72;
 }
@@ -728,7 +728,7 @@ textarea {
   }
 
   .brand-title {
-    font-size: 17px;
+    font-size: 16px;
     margin-bottom: 0;
   }
 
@@ -824,19 +824,8 @@ textarea {
   }
 
   .script-title {
-    font-size: 27px;
+    font-size: 24px;
     margin-bottom: 8px;
-  }
-
-  .script-summary,
-  .scene-row-text,
-  .dialogue-text,
-  .text-copy-box,
-  .overview-value,
-  .section-note,
-  .question-text,
-  .meta-tag-value {
-    font-size: 16px;
   }
 
   .section-card {
@@ -863,21 +852,7 @@ textarea {
   }
 
   .scene-title {
-    font-size: 18px;
-  }
-
-  .question-text,
-  .meta-tag-value,
-  .dialogue-text,
-  .scene-row-text {
-    line-height: 1.72;
-  }
-
-  .section-title,
-  .overview-label,
-  .meta-tag-label,
-  .scene-row-label {
-    font-size: 13px;
+    font-size: 16px;
   }
 
   .text-copy-box {
