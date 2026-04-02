@@ -703,17 +703,13 @@ textarea {
   .sidebar-header-top {
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
     gap: 12px;
   }
 
   .sidebar-header-tabs {
     width: auto;
     flex-shrink: 0;
-    order: -1;
-  }
-
-  .brand-block {
-    order: 1;
   }
 
   .brand-title {
@@ -730,8 +726,9 @@ textarea {
   }
 
   .archive-tab {
-    padding: 8px 14px;
+    padding: 7px 14px;
     font-size: 13px;
+    white-space: nowrap;
   }
 
   .sidebar-nav {
