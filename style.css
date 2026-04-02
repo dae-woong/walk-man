@@ -148,16 +148,9 @@ textarea {
   line-height: 1.5;
 }
 
-.episode-select-wrap {
+.mobile-episode-select {
   display: none;
   margin-top: 10px;
-}
-
-.episode-select-label {
-  flex-shrink: 0;
-  font-size: 13px;
-  font-weight: 700;
-  color: var(--text-subtle);
 }
 
 .episode-select {
@@ -713,10 +706,8 @@ textarea {
     display: none;
   }
 
-  .episode-select-wrap {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  .mobile-episode-select {
+    display: block;
   }
 
   .script-container {
