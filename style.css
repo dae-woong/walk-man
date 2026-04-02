@@ -264,6 +264,7 @@ textarea {
 .script-header {
   margin-bottom: 14px;
   padding: 20px 24px 22px;
+  background: var(--bg-surface);
   border-top: 1px solid var(--border-strong);
   border-right: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
@@ -350,6 +351,7 @@ textarea {
 }
 
 .section-framed {
+  background: var(--bg-surface);
   border-top: 1px solid var(--border-strong);
   border-right: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
@@ -493,6 +495,7 @@ textarea {
 }
 
 .scene-framed {
+  background: var(--bg-surface);
   border-top: 1px solid var(--border);
   border-right: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
@@ -652,6 +655,7 @@ textarea {
 }
 
 .empty-script {
+  background: var(--bg-surface);
   border-top: 1px solid var(--border-strong);
   border-right: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
