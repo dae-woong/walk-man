@@ -1,0 +1,8 @@
+# 개인정보
+user input/
+
+# 임시 파일
+temp-subs/
+
+# Claude 설정
+.claude/
