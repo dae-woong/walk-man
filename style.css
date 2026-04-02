@@ -722,9 +722,10 @@ textarea {
 
   .archive-tabs {
     width: auto;
-    border-radius: var(--radius-md) 0 0 var(--radius-md);
+    gap: 0;
+    padding: 3px 0 3px 3px;
     border-right: 0;
-    padding-right: 0;
+    border-radius: var(--radius-md) 0 0 var(--radius-md);
   }
 
   .archive-tab {
@@ -733,14 +734,11 @@ textarea {
     font-size: 13px;
     white-space: nowrap;
     text-align: center;
+    border-radius: calc(var(--radius-md) - 3px);
   }
 
   .archive-tab:last-child {
-    border-radius: 0;
-  }
-
-  .archive-tab:last-child.active {
-    border-radius: 0;
+    border-radius: calc(var(--radius-md) - 3px) 0 0 calc(var(--radius-md) - 3px);
   }
 
   .sidebar-track {
