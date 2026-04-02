@@ -72,6 +72,20 @@ textarea {
   background: var(--bg-surface);
 }
 
+.sidebar-header-top {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.brand-block {
+  min-width: 0;
+}
+
+.sidebar-header-tabs {
+  width: 100%;
+}
+
 .brand-title {
   font-size: 20px;
   font-weight: 780;
@@ -682,6 +696,44 @@ textarea {
     z-index: 20;
   }
 
+  .sidebar-header {
+    padding: 10px 14px;
+  }
+
+  .sidebar-header-top {
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .sidebar-header-tabs {
+    width: auto;
+    flex-shrink: 0;
+    order: -1;
+  }
+
+  .brand-block {
+    order: 1;
+  }
+
+  .brand-title {
+    font-size: 17px;
+    margin-bottom: 0;
+  }
+
+  .brand-logline {
+    display: none;
+  }
+
+  .archive-tabs {
+    width: auto;
+  }
+
+  .archive-tab {
+    padding: 8px 14px;
+    font-size: 13px;
+  }
+
   .sidebar-nav {
     display: none;
   }
@@ -729,6 +781,17 @@ textarea {
     padding: 12px 14px 10px;
   }
 
+  .sidebar-header-top {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .sidebar-header-tabs {
+    width: 178px;
+    flex-shrink: 0;
+  }
+
   .sidebar-nav {
     padding: 0;
   }
@@ -741,6 +804,10 @@ textarea {
   .sidebar-track-note,
   .script-mode-note {
     display: none;
+  }
+
+  .brand-title {
+    margin-bottom: 0;
   }
 
   .script-container {

@@ -7,13 +7,13 @@
   const collections = [
     {
       key: "self",
-      label: "셀프 촬영",
+      label: "셀프",
       description: "강영선이 직접 촬영하는 기록",
       episodes: (archive.episodes || []).map((episode) => ({ ...episode, track: "self" }))
     },
     {
       key: "interview",
-      label: "김태형 인터뷰",
+      label: "인터뷰",
       description: "김태형이 질문하고 촬영하는 인터뷰 기록",
       episodes: (archive.interviews || []).map((episode) => ({ ...episode, track: "interview" }))
     }
@@ -144,11 +144,17 @@
     return `
       <aside class="sidebar">
         <div class="sidebar-header">
-          <div class="brand-title">${escapeHTML(archive.project.title)}</div>
-          <div class="brand-logline">${escapeHTML(archive.project.logline)}</div>
+          <div class="sidebar-header-top">
+            <div class="brand-block">
+              <div class="brand-title">${escapeHTML(archive.project.title)}</div>
+              <div class="brand-logline">${escapeHTML(archive.project.logline)}</div>
+            </div>
+            <div class="sidebar-header-tabs">
+              ${renderCollectionTabs(currentCollection.key)}
+            </div>
+          </div>
         </div>
         <div class="sidebar-track">
-          ${renderCollectionTabs(currentCollection.key)}
           <p class="sidebar-track-note">${escapeHTML(currentCollection.description)}</p>
           <div class="episode-select-wrap">
             <label class="episode-select-label" for="episode-select">에피소드 선택</label>
