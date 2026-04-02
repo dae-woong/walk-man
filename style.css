@@ -186,18 +186,10 @@ textarea {
 }
 
 .episode-item.active {
-  background: var(--text-main);
-  color: #ffffff;
-}
-
-.episode-item.active .ep-number,
-.episode-item.active .ep-subtitle {
-  color: rgba(255, 255, 255, 0.7);
-}
-
-.episode-item.active .ep-status {
-  background: rgba(255, 255, 255, 0.15);
-  color: #ffffff;
+  background: var(--bg-subtle);
+  border-left: 2px solid var(--text-main);
+  border-radius: 0;
+  padding-left: 13px;
 }
 
 .episode-item:focus-visible,
