@@ -188,7 +188,7 @@ textarea {
 .episode-item.active {
   background: var(--bg-subtle);
   border-left: 2px solid var(--text-main);
-  border-radius: 0;
+  border-radius: 0 10px 10px 0;
   padding-left: 13px;
 }
 
