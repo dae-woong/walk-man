@@ -252,6 +252,7 @@ textarea {
 .main-content {
   flex: 1;
   overflow-y: auto;
+  background: var(--bg-subtle);
 }
 
 .script-container {
