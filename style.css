@@ -186,7 +186,18 @@ textarea {
 }
 
 .episode-item.active {
-  background: var(--bg-subtle);
+  background: var(--text-main);
+  color: #ffffff;
+}
+
+.episode-item.active .ep-number,
+.episode-item.active .ep-subtitle {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.episode-item.active .ep-status {
+  background: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
 }
 
 .episode-item:focus-visible,
