@@ -154,23 +154,6 @@
             </div>
           </div>
         </div>
-        <div class="sidebar-track">
-          <p class="sidebar-track-note">${escapeHTML(currentCollection.description)}</p>
-          <div class="episode-select-wrap">
-            <label class="episode-select-label" for="episode-select">에피소드</label>
-            <select id="episode-select" class="episode-select" data-episode-select>
-              ${currentCollection.episodes
-                .map(
-                  (episode) => `
-                    <option value="${escapeHTML(episode.id)}" ${episode.id === currentEpisodeId ? "selected" : ""}>
-                      ${escapeHTML(episode.number)}. ${escapeHTML(episode.title)}
-                    </option>
-                  `
-                )
-                .join("")}
-            </select>
-          </div>
-        </div>
         <nav class="sidebar-nav" aria-label="에피소드 목록">
           ${currentCollection.episodes
             .map(
@@ -380,13 +363,6 @@
         window.location.hash = targetCollection.episodes[0].id;
       });
     });
-
-    const select = root.querySelector("[data-episode-select]");
-    if (select) {
-      select.addEventListener("change", (event) => {
-        window.location.hash = event.target.value;
-      });
-    }
 
     root.querySelectorAll("[data-view]").forEach((button) => {
       button.addEventListener("click", () => {
