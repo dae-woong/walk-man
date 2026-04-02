@@ -159,12 +159,8 @@
             .map(
               (episode) => `
                 <a href="#${escapeHTML(episode.id)}" class="episode-item ${episode.id === currentEpisodeId ? "active" : ""}">
-                  <div class="ep-meta">
-                    <span class="ep-number">${escapeHTML(episode.number)}</span>
-                    <span class="ep-status ${getStatusClass(episode.status)}">${escapeHTML(episode.status)}</span>
-                  </div>
-                  <div class="ep-title">${escapeHTML(episode.title)}</div>
-                  <div class="ep-subtitle">${escapeHTML(episode.subtitle || "")}</div>
+                  <span class="ep-number">${escapeHTML(episode.number)}.</span>
+                  <span class="ep-title">${escapeHTML(episode.title)}</span>
                 </a>
               `
             )

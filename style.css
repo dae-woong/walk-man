@@ -171,10 +171,12 @@ textarea {
 }
 
 .episode-item {
-  display: block;
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
   text-decoration: none;
   color: inherit;
-  padding: 15px;
+  padding: 10px 15px;
   margin-bottom: 2px;
   border: 0;
   border-radius: var(--radius-md);
@@ -200,59 +202,18 @@ textarea {
   outline-offset: 2px;
 }
 
-.ep-meta {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 8px;
-  margin-bottom: 4px;
-}
-
 .ep-number {
-  font-size: 13px;
+  flex-shrink: 0;
+  font-size: 14px;
   font-weight: 700;
   color: var(--text-subtle);
-  letter-spacing: -0.01em;
-}
-
-.ep-status {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 30px;
-  padding: 3px 8px;
-  border-radius: var(--radius-md);
-  font-size: 12px;
-  font-weight: 700;
-}
-
-.ep-status.is-complete {
-  background: var(--status-done-bg);
-  color: var(--status-done-text);
-}
-
-.ep-status.is-draft {
-  background: var(--status-draft-bg);
-  color: var(--status-draft-text);
-}
-
-.ep-status.is-upcoming {
-  background: var(--status-upcoming-bg);
-  color: var(--status-upcoming-text);
 }
 
 .ep-title {
   font-size: 14px;
-  font-weight: 720;
+  font-weight: 700;
   line-height: 1.45;
   letter-spacing: -0.02em;
-  margin-bottom: 3px;
-}
-
-.ep-subtitle {
-  font-size: 13px;
-  color: var(--text-subtle);
-  line-height: 1.45;
 }
 
 .main-content {
