@@ -724,6 +724,7 @@ textarea {
     width: auto;
     border-radius: var(--radius-md) 0 0 var(--radius-md);
     border-right: 0;
+    padding-right: 0;
   }
 
   .archive-tab {
@@ -735,6 +736,10 @@ textarea {
   }
 
   .archive-tab:last-child {
+    border-radius: 0;
+  }
+
+  .archive-tab:last-child.active {
     border-radius: 0;
   }
 

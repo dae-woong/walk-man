@@ -412,6 +412,7 @@
 
   window.addEventListener("hashchange", () => {
     render();
+    window.scrollTo({ top: 0, behavior: "auto" });
     const pane = document.querySelector(".main-content");
     if (pane) pane.scrollTo({ top: 0, behavior: "auto" });
   });
