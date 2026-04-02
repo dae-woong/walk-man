@@ -696,7 +696,7 @@ textarea {
   }
 
   .sidebar-header {
-    padding: 10px 0 10px 16px;
+    padding: 10px 16px;
   }
 
   .sidebar-header-top {
@@ -720,25 +720,12 @@ textarea {
     display: none;
   }
 
-  .archive-tabs {
-    width: auto;
-    gap: 0;
-    padding: 3px 0 3px 3px;
-    border-right: 0;
-    border-radius: var(--radius-md) 0 0 var(--radius-md);
-  }
-
   .archive-tab {
     padding: 7px 0;
     width: 80px;
     font-size: 13px;
     white-space: nowrap;
     text-align: center;
-    border-radius: calc(var(--radius-md) - 3px);
-  }
-
-  .archive-tab:last-child {
-    border-radius: calc(var(--radius-md) - 3px) 0 0 calc(var(--radius-md) - 3px);
   }
 
   .sidebar-track {
