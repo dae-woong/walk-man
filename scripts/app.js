@@ -417,5 +417,18 @@
     if (pane) pane.scrollTo({ top: 0, behavior: "auto" });
   });
 
+  let lastScrollY = 0;
+  window.addEventListener("scroll", () => {
+    const sidebar = document.querySelector(".sidebar");
+    if (!sidebar || window.innerWidth > 900) return;
+    const currentY = window.scrollY;
+    if (currentY > lastScrollY && currentY > 60) {
+      sidebar.classList.add("is-hidden");
+    } else {
+      sidebar.classList.remove("is-hidden");
+    }
+    lastScrollY = currentY;
+  });
+
   render();
 });

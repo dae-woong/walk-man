@@ -693,6 +693,11 @@ textarea {
     position: sticky;
     top: 0;
     z-index: 20;
+    transition: transform 0.25s ease;
+  }
+
+  .sidebar.is-hidden {
+    transform: translateY(-100%);
   }
 
   .sidebar-header {
