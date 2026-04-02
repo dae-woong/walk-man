@@ -604,13 +604,14 @@ textarea {
 
 .text-copy-box {
   width: 100%;
-  min-height: 520px;
-  resize: vertical;
+  resize: none;
+  overflow: hidden;
   border: 0;
   border-radius: var(--radius-md);
   background: transparent;
   color: var(--text-main);
   padding: 16px 0 0;
+  field-sizing: content;
   font-size: 16px;
   line-height: 1.75;
 }
@@ -814,7 +815,6 @@ textarea {
   }
 
   .text-copy-box {
-    min-height: 420px;
     padding: 14px 0 0;
   }
 

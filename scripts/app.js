@@ -389,6 +389,10 @@
 
     const copyButton = root.querySelector("[data-copy-text]");
     const textarea = root.querySelector(".text-copy-box");
+    if (textarea) {
+      textarea.style.height = "auto";
+      textarea.style.height = textarea.scrollHeight + "px";
+    }
     if (copyButton && textarea) {
       copyButton.addEventListener("click", async () => {
         textarea.focus();
