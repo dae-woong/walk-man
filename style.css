@@ -64,6 +64,9 @@ textarea {
   flex-direction: column;
   background: var(--bg-surface);
   border-right: 1px solid var(--border);
+  height: 100vh;
+  position: sticky;
+  top: 0;
 }
 
 .sidebar-header {
