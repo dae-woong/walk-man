@@ -286,11 +286,11 @@ textarea {
 }
 
 .view-switch-button {
-  flex: 1 1 0;
+  width: 90px;
   border: 0;
   background: transparent;
   color: var(--text-subtle);
-  padding: 10px 12px;
+  padding: 10px 0;
   border-radius: var(--radius-md);
   font-size: 14px;
   font-weight: 700;
@@ -804,6 +804,11 @@ textarea {
 
   .view-switch {
     width: 100%;
+  }
+
+  .view-switch-button {
+    width: auto;
+    flex: 1;
   }
 
   .overview-row,
