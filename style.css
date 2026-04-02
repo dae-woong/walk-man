@@ -725,14 +725,19 @@ textarea {
     width: auto;
     margin-right: -14px;
     border-radius: var(--radius-md) 0 0 var(--radius-md);
+    border-right: 0;
   }
 
   .archive-tab {
     padding: 7px 0;
-    width: 56px;
+    width: 80px;
     font-size: 13px;
     white-space: nowrap;
     text-align: center;
+  }
+
+  .archive-tab:last-child {
+    border-radius: 0;
   }
 
   .sidebar-nav {
