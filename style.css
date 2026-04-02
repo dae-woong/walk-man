@@ -697,7 +697,7 @@ textarea {
   }
 
   .sidebar-header {
-    padding: 10px 14px;
+    padding: 10px 14px 10px 16px;
   }
 
   .sidebar-header-top {
@@ -723,12 +723,16 @@ textarea {
 
   .archive-tabs {
     width: auto;
+    margin-right: -14px;
+    border-radius: var(--radius-md) 0 0 var(--radius-md);
   }
 
   .archive-tab {
-    padding: 7px 14px;
+    padding: 7px 0;
+    width: 56px;
     font-size: 13px;
     white-space: nowrap;
+    text-align: center;
   }
 
   .sidebar-nav {
