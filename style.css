@@ -151,9 +151,8 @@ textarea {
 }
 
 .episode-select-label {
-  display: block;
-  margin-bottom: 6px;
-  font-size: 12px;
+  flex-shrink: 0;
+  font-size: 13px;
   font-weight: 700;
   color: var(--text-subtle);
 }
@@ -748,7 +747,9 @@ textarea {
   }
 
   .episode-select-wrap {
-    display: block;
+    display: flex;
+    align-items: center;
+    gap: 10px;
   }
 
   .script-container {

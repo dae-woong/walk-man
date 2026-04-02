@@ -66,7 +66,7 @@
   function buildEpisodeText(episode, collection) {
     const blocks = [];
 
-    blocks.push(`[${archive.project.title} ${collection.label} EP.${episode.number}] ${episode.title}`);
+    blocks.push(`[${archive.project.title} ${collection.label} ${episode.number}] ${episode.title}`);
 
     if (episode.subtitle) blocks.push(`설명\n${episode.subtitle}`);
     if (episode.runtime) blocks.push(`러닝타임\n${episode.runtime}`);
@@ -157,13 +157,13 @@
         <div class="sidebar-track">
           <p class="sidebar-track-note">${escapeHTML(currentCollection.description)}</p>
           <div class="episode-select-wrap">
-            <label class="episode-select-label" for="episode-select">에피소드 선택</label>
+            <label class="episode-select-label" for="episode-select">에피소드</label>
             <select id="episode-select" class="episode-select" data-episode-select>
               ${currentCollection.episodes
                 .map(
                   (episode) => `
                     <option value="${escapeHTML(episode.id)}" ${episode.id === currentEpisodeId ? "selected" : ""}>
-                      EP.${escapeHTML(episode.number)} · ${escapeHTML(episode.title)}
+                      ${escapeHTML(episode.number)}. ${escapeHTML(episode.title)}
                     </option>
                   `
                 )
@@ -177,7 +177,7 @@
               (episode) => `
                 <a href="#${escapeHTML(episode.id)}" class="episode-item ${episode.id === currentEpisodeId ? "active" : ""}">
                   <div class="ep-meta">
-                    <span class="ep-number">EP.${escapeHTML(episode.number)}</span>
+                    <span class="ep-number">${escapeHTML(episode.number)}</span>
                     <span class="ep-status ${getStatusClass(episode.status)}">${escapeHTML(episode.status)}</span>
                   </div>
                   <div class="ep-title">${escapeHTML(episode.title)}</div>
